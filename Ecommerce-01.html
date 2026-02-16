@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Interface</title>
+</head>
+
+<body>
+<header>
+    <h1>My Online Store</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#checkout">Checkout</a></li>
+            <li><a href="#account">Account</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section id="landing">
+    <h2>Welcome to Our Shop</h2>
+    <p>Discover amazing products at affordable prices.</p>
+    <button>Shop Now</button>
+
+    <h3>Featured Products</h3>
+
+    <article>
+        <h4>Wireless Headphones</h4>
+        <p>Discount Price: $25</p>
+    </article>
+
+    <article>
+        <h4>Running Shoes</h4>
+        <p>Discount Price: $55</p>
+    </article>
+</section>
+
+<section id="products">
+    <h2>Product Listing</h2>
+
+    <article>
+        <img src="product1.jpg" alt="Running Shoes" width="120">
+        <h3>Running Shoes</h3>
+        <p>Price: $50</p>
+        <a href="#details">View Details</a>
+    </article>
+
+    <article>
+        <img src="product2.jpg" alt="Backpack" width="120">
+        <h3>Backpack</h3>
+        <p>Price: $30</p>
+        <a href="#details">View Details</a>
+    </article>
+
+    <aside>
+        <h3>Filter Products</h3>
+        <form>
+            <label><input type="checkbox"> On Sale</label><br>
+            <label><input type="radio" name="price"> Low to High</label><br>
+            <label><input type="radio" name="price"> High to Low</label>
+        </form>
+    </aside>
+</section>
+
+<section id="details">
+    <h2>Product Details</h2>
+
+    <table border="1">
+        <tr>
+            <th>Feature</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Material</td>
+            <td>Leather</td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td>Black</td>
+        </tr>
+    </table>
+
+    <form>
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1">
+        <button>Add to Cart</button>
+    </form>
+
+    <section>
+        <h3>User Reviews</h3>
+        <blockquote>
+            Very comfortable and high quality!
+        </blockquote>
+    </section>
+</section>
+
+<section id="cart">
+    <h2>Shopping Cart</h2>
+
+    <ul>
+        <li>
+            <img src="product1.jpg" width="100" alt="Running Shoes">
+            <h3>Running Shoes</h3>
+            <p>Price: $50</p>
+            <label>Quantity:</label>
+            <input type="number" value="1" min="1">
+        </li>
+    </ul>
+
+    <div>
+        <h3>Subtotal: $50</h3>
+        <button>Proceed to Checkout</button>
+    </div>
+
+    <section>
+        <p>Your cart is currently empty.</p>
+    </section>
+</section>
+
+<section id="checkout">
+    <h2>Checkout</h2>
+
+    <fieldset>
+        <legend>Shipping Address</legend>
+
+        <label>Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Street:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Zip Code:</label><br>
+        <input type="text" required>
+    </fieldset>
+
+    <h3>Payment Method</h3>
+
+    <form>
+        <label><input type="radio" name="payment"> Credit Card</label><br>
+        <label><input type="radio" name="payment"> PayPal</label>
+    </form>
+
+    <aside>
+        <h3>Order Summary</h3>
+        <p>Total: $50</p>
+        <button>Place Order</button>
+    </aside>
+</section>
+
+<section id="account">
+    <h2>User Account</h2>
+
+    <header>
+        <h3>Welcome, Daisyrie Joy</h3>
+        <nav>
+            <ul>
+                <li>Order History</li>
+                <li>Profile Settings</li>
+                <li>Wishlist</li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <label>Email:</label><br>
+        <input type="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" required><br><br>
+
+        <button type="submit">Save Account</button>
+    </form>
+
+    <h3>Previous Purchases</h3>
+
+    <details>
+        <summary>Order #1001 — Running Shoes</summary>
+        <p>Price: $50 | Delivered</p>
+    </details>
+
+    <details>
+        <summary>Order #1002 — Backpack</summary>
+        <p>Price: $30 | Delivered</p>
+    </details>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 My Online Store</p>
+</footer>
+
+</body>
+</html>
