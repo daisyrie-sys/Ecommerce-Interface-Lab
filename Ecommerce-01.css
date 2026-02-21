@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --bg-light: #f4f4f4;
+    --white: #ffffff;
+    --text-main: #333333;
+    --border-color: #dddddd;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, "Times New Roman", serif; 
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+header h1 {
+    color: var(--white);
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav a:active {
+    opacity: 0.7;
+}
+
+nav a:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #cf6516;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: 3px solid var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+#products article {
+    display: inline-block;   
+    width: 220px;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#products article:hover {
+    transform: translateY(-5px);
+}
+
+#products article:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+#products article:nth-child(even) {
+    background-color: #f0f6ff;
+}
+
+article {
+    margin: 15px 0;
+}
+
+#cart ul:empty {
+    min-height: 120px;
+    background-color: #fff3f3;
+    border: 2px dashed #ff9999;
+    display: block;
+}
+.price::before {
+    content: "₱ ";
+    font-weight: bold;
+    color: var(--accent-color);
+}
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+input:required {
+    border: 2px solid #ff9800;
+}
+
+input:valid {
+    border: 2px solid #4caf50;
+}
+
+input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#details td:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: #f9f9f9;
+}
+
+#account ul li::marker {
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+blockquote {
+    position: relative;
+    font-style: italic;
+    padding: 15px 25px;
+    background-color: #f8f8f8;
+    border-left: 5px solid var(--accent-color);
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    left: 8px;
+    top: -5px;
+    color: var(--accent-color);
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    color: var(--accent-color);
+}
+
+aside {
+    background: var(--white);
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 4px solid var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+}
