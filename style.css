@@ -1,0 +1,111 @@
+/* VARIABLES */
+:root {
+    --primary-color: #ff4d6d;
+    --bg-color: #ffe6f0;
+    --text-color: #333;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background: var(--primary-color);
+    padding-top: 20px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* SECTIONS */
+section, header {
+    margin-left: 160px;
+    padding: 40px;
+}
+
+/* HERO */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(pink, white);
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--primary-color);
+}
+
+button {
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    margin-left: 160px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section, header, footer {
+        margin-left: 0;
+    }
+}
